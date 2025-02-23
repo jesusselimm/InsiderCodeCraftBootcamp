@@ -103,10 +103,15 @@
             <span class="info">5 Seasons</span>
             <span class="info">Drama</span>
           </div>
-        <button class="play-btn">
-          <i class="fas fa-play"></i>
-          Let's Play
-        </button>
+        <div class="hero-buttons">
+          <button class="play-btn">
+            <i class="fas fa-play"></i>
+            Let's Play
+          </button>
+          <button class="favorite-btn">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -266,6 +271,11 @@
   function closeMenu() {
     document.getElementById('nav-toggle').checked = false;
   }
+
+  // Favori butonu için yeni kod
+  document.querySelector('.favorite-btn').addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
   </script>
 </body>
 </html>
