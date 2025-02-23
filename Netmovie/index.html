@@ -49,6 +49,12 @@
                 </a>
               </li>
               <li>
+                <a href="#favorite-episode" onclick="closeMenu()">
+                  <i class="fas fa-heart"></i>
+                  Favorite Episode
+                </a>
+              </li>
+              <li>
                 <a href="#about" onclick="closeMenu()">
                   <i class="fas fa-info-circle"></i>
                   About Breaking Bad
@@ -113,7 +119,7 @@
         <div class="episode-card">
           <img src="images/episode1.jpg" alt="Pilot Episode">
           <div class="episode-info">
-            <h3>Pilot</h3>
+            <h3>1. Pilot</h3>
             <p>A high school chemistry teacher, Walter White, learns he has terminal cancer. Desperate to secure his family's future, he teams up with a former student to sell crystal meth.</p>
             <span class="duration">58 min</span>
           </div>
@@ -122,7 +128,7 @@
         <div class="episode-card">
           <img src="images/episode2.jpg" alt="Cat's in the Bag">
           <div class="episode-info">
-            <h3>Cat's in the Bag...</h3>
+            <h3>2. Cat's in the Bag...</h3>
             <p>Walt and Jesse attempt to dispose of the two bodies in the RV, which becomes complicated by Skyler's growing suspicions.</p>
             <span class="duration">48 min</span>
           </div>
@@ -131,7 +137,7 @@
         <div class="episode-card">
           <img src="images/episode3.jpg" alt="...And the Bag's in the River">
           <div class="episode-info">
-            <h3>And the Bag's in the River</h3>
+            <h3>3. And the Bag's in the River</h3>
             <p>Walt faces a difficult decision regarding Jesse's volatile partner, while Skyler grows more suspicious of her husband's activities.</p>
             <span class="duration">48 min</span>
           </div>
@@ -140,7 +146,7 @@
         <div class="episode-card">
           <img src="images/episode4.jpg" alt="Cancer Man">
           <div class="episode-info">
-            <h3>Cancer Man</h3>
+            <h3>4. Cancer Man</h3>
             <p>Being forced to reveal the truth about his illness leaves Walt facing the dilemma of how to pay for an expensive series of cancer treatments.</p>
             <span class="duration">48 min</span>
           </div>
@@ -149,10 +155,35 @@
         <div class="episode-card">
           <img src="images/episode5.jpg" alt="Gray Matter">
           <div class="episode-info">
-            <h3>Gray Matter</h3>
+            <h3>5. Gray Matter</h3>
             <p>Skyler organizes an intervention to persuade Walt to accept his former research partner's generous offer to pay for the cancer treatments.</p>
             <span class="duration">48 min</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Favorite Episode Section -->
+    <section class="favorite-episode" id="favorite-episode">
+      <h2 class="section-title">Favorite Episode</h2>
+      <div class="favorite-episode-container">
+        <div class="favorite-episode-info">
+          <h3>Ozymandias (S5 E14)</h3>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>IMDb 10/10</span>
+            <span class="info">5. Season 14. Episode</span>
+          </div>
+          <p>One of the most intense episodes of Breaking Bad, Ozymandias, tells the story of Walter White's downfall and the disintegration of his family. Inspired by Percy Bysshe Shelley's poem of the same name, this episode is the highest-rated episode on IMDb.</p>
+        </div>
+        <div class="video-container">
+          <iframe 
+            src="https://www.youtube.com/embed/ju5VG5obc6g" 
+            title="Breaking Bad - Ozymandias" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
     </section>
@@ -172,6 +203,7 @@
         </div>
       </div>
 
+      <!-- Characters Section -->
       <h2 class="section-title" id="characters">Main Characters</h2>
       <div class="characters-container">
         <div class="characters-grid">
@@ -212,6 +244,24 @@
       </div>
     </section>
   </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>Designed & Developed by</p>
+        <h3>Selim Kurtulmuş</h3>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/jesusselimm" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/selim-kurtulmus" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
   <script>
   function closeMenu() {
     document.getElementById('nav-toggle').checked = false;

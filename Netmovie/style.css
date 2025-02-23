@@ -160,6 +160,25 @@ nav ul li.active {
     overflow: hidden;
 }
 
+.hero-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to top, rgba(13, 27, 42, 0.9), transparent);
+    z-index: 1;
+}
+
+.hero-card h2, 
+.hero-card-text, 
+.hero-card .rating,
+.hero-card .play-btn {
+    position: relative;
+    z-index: 2;
+}
+
 .hero-card h2 {
     font-size: 50px;
     font-weight: bold;
@@ -169,6 +188,10 @@ nav ul li.active {
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.4s ease;
+}
+
+.hero-card h2 a:hover {
+    color: var(--accent-color);
 }
 
 .hero-card-text {
@@ -328,13 +351,11 @@ nav ul li.active {
     padding: 15px;
 }
 
-/* Smooth scroll behavior for page */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 20px;
 }
 
-/* Menu styles */
 .menu-divider {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -552,13 +573,201 @@ html {
         align-items: center;
         justify-content: center;
     }
-
-    /* Önceki notification'ı gizle */
     .notification,
     .profile span {
         display: none;
     }
+}
 
-    // ... existing mobile styles ...
+/* Favorite Episode Section */
+.favorite-episode {
+    margin: 40px 0;
+}
+
+.favorite-episode-container {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.favorite-episode-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.favorite-episode-info p {
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .favorite-episode-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background: var(--secondary-color);
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info p {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-info h3 {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    color: var(--text-color);
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+.rating .info {
+    position: relative;
+    padding-left: 12px;
+}
+
+.rating .info::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.rating .info:first-of-type {
+    padding-left: 12px;
+}
+
+.rating i {
+    color: #ffd700;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-card {
+        height: 350px;
+    }
+
+    .hero-card h2 {
+        font-size: 42px;
+    }
+
+    .hero-card-text {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-card {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .hero-card h2 {
+        font-size: 36px;
+    }
+
+    .hero-card-text {
+        width: 80%;
+        font-size: 11px;
+    }
+
+    .hero-card::before {
+        height: 85%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero-card {
+        height: 250px;
+        padding: 15px;
+    }
+
+    .hero-card h2 {
+        font-size: 28px;
+    }
+
+    .hero-card-text {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .play-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .hero-card::before {
+        height: 100%;
+    }
 }
 
