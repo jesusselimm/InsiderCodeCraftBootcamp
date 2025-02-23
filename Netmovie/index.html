@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netmovie - Watch Movies, TV Shows, and Originals</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">Netmovıe</div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav class="nav-menu">
+        <ul class="main-menu">
+          <li><label for="nav-toggle">Movie</label></li>
+          <li class="active"><label for="nav-toggle">Series</label></li>
+          <li><label for="nav-toggle">Originals</label></li>
+          <li class="categories-dropdown desktop-only">
+            <label for="nav-toggle">Categories</label>
+            <ul class="dropdown-content">
+              <li><label for="nav-toggle"><i class="fas fa-fire"></i> Trending</label></li>
+              <li><label for="nav-toggle"><i class="fas fa-bomb"></i> Action</label></li>
+              <li><label for="nav-toggle"><i class="fas fa-heart"></i> Romance</label></li>
+              <li><label for="nav-toggle"><i class="fas fa-feather-pointed"></i> Animation</label></li>
+              <li><label for="nav-toggle"><i class="fas fa-ghost"></i> Horror</label></li>
+              <li><label for="nav-toggle"><i class="fas fa-star"></i> Special</label></li>
+            </ul>
+          </li>
+          <li class="mobile-notification">
+            <label for="nav-toggle">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">1</span>
+              Notifications
+            </label>
+          </li>
+          <li class="page-sections">
+            <hr class="menu-divider">
+            <span class="section-title-menu">Page Sections</span>
+            <ul>
+              <li>
+                <a href="#episodes" onclick="closeMenu()">
+                  <i class="fas fa-film"></i>
+                  Episodes
+                </a>
+              </li>
+              <li>
+                <a href="#about" onclick="closeMenu()">
+                  <i class="fas fa-info-circle"></i>
+                  About Breaking Bad
+                </a>
+              </li>
+              <li>
+                <a href="#characters" onclick="closeMenu()">
+                  <i class="fas fa-users"></i>
+                  Main Characters
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-section">
+        <div class="user-profile">
+          <div class="notification">
+            <i class="fas fa-bell"></i>
+            <span class="notification-badge">1</span>
+          </div>
+          <div class="profile">
+            <img src="images/rick-sanchez-pp.jpg" alt="Rick Sanchez">
+            <span>Premium</span>
+          </div>
+        </div>
+        <label for="nav-toggle" class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="hero-card">
+        <h2>
+          <a href="https://www.imdb.com/title/tt0903747/" target="_blank">Breaking Bad</a>
+        </h2>
+        <p class="hero-card-text">A high school chemistry teacher dying of cancer teams with a former student to secure his family's future by manufacturing and selling crystal meth.</p>
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>IMDb 9.5</span>
+            <span class="info">2008</span>
+            <span class="info">5 Seasons</span>
+            <span class="info">Drama</span>
+          </div>
+        <button class="play-btn">
+          <i class="fas fa-play"></i>
+          Let's Play
+        </button>
+      </div>
+    </div>
+
+    <!-- Episodes Section -->
+    <section class="episodes" id="episodes">
+      <h2 class="section-title">
+        Episodes
+      </h2>
+      <div class="episodes-grid">
+        <div class="episode-card">
+          <img src="images/episode1.jpg" alt="Pilot Episode">
+          <div class="episode-info">
+            <h3>Pilot</h3>
+            <p>A high school chemistry teacher, Walter White, learns he has terminal cancer. Desperate to secure his family's future, he teams up with a former student to sell crystal meth.</p>
+            <span class="duration">58 min</span>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <img src="images/episode2.jpg" alt="Cat's in the Bag">
+          <div class="episode-info">
+            <h3>Cat's in the Bag...</h3>
+            <p>Walt and Jesse attempt to dispose of the two bodies in the RV, which becomes complicated by Skyler's growing suspicions.</p>
+            <span class="duration">48 min</span>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <img src="images/episode3.jpg" alt="...And the Bag's in the River">
+          <div class="episode-info">
+            <h3>And the Bag's in the River</h3>
+            <p>Walt faces a difficult decision regarding Jesse's volatile partner, while Skyler grows more suspicious of her husband's activities.</p>
+            <span class="duration">48 min</span>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <img src="images/episode4.jpg" alt="Cancer Man">
+          <div class="episode-info">
+            <h3>Cancer Man</h3>
+            <p>Being forced to reveal the truth about his illness leaves Walt facing the dilemma of how to pay for an expensive series of cancer treatments.</p>
+            <span class="duration">48 min</span>
+          </div>
+        </div>
+
+        <div class="episode-card">
+          <img src="images/episode5.jpg" alt="Gray Matter">
+          <div class="episode-info">
+            <h3>Gray Matter</h3>
+            <p>Skyler organizes an intervention to persuade Walt to accept his former research partner's generous offer to pay for the cancer treatments.</p>
+            <span class="duration">48 min</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="summary" id="about">
+      <h2 class="section-title">About Breaking Bad</h2>
+      <div class="summary-grid">
+        <div class="movie-card">
+          <div class="movie-info"> 
+            <h2>Summary</h2>
+            <p class="summary-text">Breaking Bad is considered one of the most successful shows on modern television. Created by Vince Gilligan, the series centers on Walter White, an ordinary chemistry teacher who, after being diagnosed with lung cancer, starts producing methamphetamine to provide financial security for his family.
+                One of the show's greatest strengths is its character development and transformation. Walter White's transformation from Mr. Chips to Scarface is handled in an incredibly organic and impressive way. The side characters (Jesse, Hank, Saul, Gus) are also deeply written and contribute greatly to the story.                
+                Also, the cinematography, symbolism and pacing are very well balanced. Especially from the third season onwards, each episode builds the tension and keeps the viewer glued to the screen.
+                All in all, a brilliantly written and impressive series that is a must watch for those interested in crime dramas.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title" id="characters">Main Characters</h2>
+      <div class="characters-container">
+        <div class="characters-grid">
+          <div class="characters-card">
+            <div class="character-info">
+              <div class="characters">
+                <img class="char-img" src="/Netmovie/images/ww.jpg" alt="Walter White">
+              </div>
+              <div class="character-text">
+                <h3>Walter White</h3>
+                <p>Walter White, a high-school chemistry teacher who, shortly after his 50th birthday, is diagnosed with Stage III lung cancer and turns to making meth to secure his family's finances. As his shady business progresses, Walter gains a notorious reputation under the alias of "Heisenberg". </p>
+              </div>
+            </div>
+          </div>
+          <div class="characters-card">
+            <div class="character-info">
+              <div class="characters">
+                <img class="char-img" src="/Netmovie/images/jp.jpg" alt="Jesse Pinkman">
+              </div>
+              <div class="character-text">
+                <h3>Jesse Pinkman</h3>
+                <p>Jesse Pinkman is Walter White's former student and partner in the methamphetamine business. He is known for his quick wit, street smarts, and loyalty to Walter. Jesse is a complex character who struggles with addiction and moral dilemmas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="characters-card">
+            <div class="character-info">
+              <div class="characters">
+                <img class="char-img" src="/Netmovie/images/sg.jpeg" alt="Saul Goodman">
+              </div>
+              <div class="character-text">
+                <h3>Saul Goodman</h3>
+                <p>Saul Goodman is a criminal lawyer who becomes Walter White's lawyer and later his business partner. He is known for his sharp wit, cunning, and ability to navigate the legal system.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+  function closeMenu() {
+    document.getElementById('nav-toggle').checked = false;
+  }
+  </script>
+</body>
+</html>
