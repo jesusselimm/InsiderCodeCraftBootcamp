@@ -150,7 +150,7 @@ nav ul li.active {
     height: 400px;
     border-radius: 20px;
     padding: 25px;
-    background-image: url('images/bb-bg.jpg');
+    background-image: url('public/images/bb-bg.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
