@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collatz Conjecture</title>
+    <style>
+        body {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .section {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .result-box {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Collatz Conjecture</h1>
+    <p>The Collatz Conjecture is a sequence of numbers that starts with a positive integer n. If n is even, the next number in the sequence is n/2. If n is odd, the next number in the sequence is 3n + 1. The conjecture is that no matter what value of n, the sequence will always reach 1.</p>
+
+    <div class="section">
+        <h2>Calculate</h2>
+        <input type="number" id="input" placeholder="Enter a number">
+        <button id="button">Calculate</button>
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <div class="section">
+        <h2>Longest Collatz Chain</h2>
+        <p>Find the starting number of the longest chain of numbers between 1 and 1,000,000.</p>
+        <button id="findLongest">Find Longest Chain</button>
+        <div id="longestResult" class="result-box"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
