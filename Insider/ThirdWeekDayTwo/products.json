@@ -1,0 +1,58 @@
+[
+    {
+        "name": "GULLSUDARE",
+        "price": 319.99,
+        "link": "https://www.ikea.com.tr/urun/gullsudare-beyaz-70-cm-sarkit-lamba-abajur-basligi-80583616",
+        "image": "https://i.hizliresim.com/84wx05n.jpg",
+        "description": "White 70 cm Pendant Lamp Shade"
+    },
+    {
+        "name": "TORARED",
+        "price": 1099.99,
+        "link": "https://www.ikea.com.tr/urun/torared-deniz-sazi-36-cm-sarkit-lamba-abajur-basligi-20430382",
+        "image": "https://i.hizliresim.com/etss5f2.jpg",
+        "description": "Seagrass 36 cm Pendant Lamp Shade"
+    },
+    {
+        "name": "KÄLLARHALS",
+        "price": 1299.99,
+        "link": "https://www.ikea.com.tr/urun/kallarhals-sari-22-cm-cam-vazo-70583711",
+        "image": "https://i.hizliresim.com/h28n2kz.jpg",
+        "description": "Yellow 22 cm Glass Vase"
+    },
+    {
+        "name": "LINDBYN",
+        "price": 999.99,
+        "link": "https://www.ikea.com.tr/urun/lindbyn-mavi-50-cm-yuvarlak-ayna-30590803",
+        "image": "https://i.hizliresim.com/9gwgb1j.jpg",
+        "description": "Blue 50 cm Round Mirror"
+    },
+    {
+        "name": "TVERSTED",
+        "price": 3999.99,
+        "link": "https://www.ikea.com.tr/urun/tversted-bej-133x195-cm-buyuk-hali-70482137",
+        "image": "https://i.hizliresim.com/r6rfjk8.jpg",
+        "description": "Beige 133x195 cm Large Rug"
+    },
+    {
+        "name": "FREDRIKSJÖN",
+        "price": 629.99,
+        "link": "https://www.ikea.com.tr/urun/fredriksjon-gri-turkuaz-100x150-cm-banyo-havlusu-20572687",
+        "image": "https://i.hizliresim.com/ejuh9m4.jpg",
+        "description": "Gray-Turquoise 100x150 cm Bath Towel"
+    },
+    {
+        "name": "TONSTAD",
+        "price": 8999.99,
+        "link": "https://www.ikea.com.tr/urun/tonstad-mese-kaplama-82x47x90-cm-bufe-00489236",
+        "image": "https://i.hizliresim.com/3l14lu6.jpg",
+        "description": "Oak Veneer 82x47x90 cm Cabinet"
+    },
+    {
+        "name": "BILLY",
+        "price": 3599.99,
+        "link": "https://www.ikea.com.tr/urun/billy-venge-80x28x202-cm-kitaplik-40477340",
+        "image": "https://i.hizliresim.com/syhqt6p.jpg",
+        "description": "Black-Brown 80x28x202 cm Bookcase"
+    }
+] 
