@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Galaxy S25 Ultra",
+      "price": 91499.99,
+      "image": "https://i.hizliresim.com/gmg2njl.jpg",
+      "link": "https://www.samsung.com/tr/smartphones/galaxy-s25-ultra/buy/",
+      "category": "Elektronik",
+      "details": {
+        "description": "Yeni nesil 6.5 inç ekranlı akıllı telefon, 128GB depolama ve 8GB RAM ile güçlendirilmiştir. 48MP üçlü kamera sistemi ile profesyonel fotoğraflar çekin.",
+        "features": ["6.5 inç AMOLED Ekran", "128GB Depolama", "8GB RAM", "48MP Üçlü Kamera", "5000mAh Batarya"],
+        "specifications": {
+          "brand": "Samsung",
+          "model": "S25 Ultra",
+          "warranty": "2 Yıl"
+        },
+        "stock": 45
+      }
+    },
+    {
+      "id": 2,
+      "name": "S95D 4K Tizen OS Smart TV",
+      "price": 189999.99,
+      "image": "https://i.hizliresim.com/2ai5n6x.jpg",
+      "link": "https://www.samsung.com/tr/tvs/oled-tv/s95d-77-inch-oled-4k-tizen-os-smart-tv-qe77s95datxtk/",
+      "category": "Elektronik",
+      "details": {
+        "description": "77 inç 4K OLED Smart TV, HDR10+ desteği ve gelişmiş ses teknolojisi ile evinizde sinema keyfi yaşatır.",
+        "features": ["77 inç 4K OLED", "HDR10+ Desteği", "Smart TV Özellikleri", "Bluetooth Bağlantı", "Geniş Görüş Açısı"],
+        "specifications": {
+          "brand": "Samsung",
+          "model": "S95D",
+          "warranty": "3 Yıl"
+        },
+        "stock": 12
+      }
+    },
+    {
+      "id": 3,
+      "name": "Galaxy Buds Pro",
+      "price": 2499.99,
+      "image": "https://i.hizliresim.com/taghdsa.jpg",
+      "link": "https://www.samsung.com/tr/audio-sound/galaxy-buds/galaxy-buds3-pro-silver-sm-r630nzaatur/",
+      "category": "Aksesuar",
+      "details": {
+        "description": "Aktif gürültü önleme teknolojisine sahip kablosuz kulaklık, 30 saate kadar pil ömrü ve yüksek ses kalitesi sunar.",
+        "features": ["Aktif Gürültü Önleme", "30 Saat Pil Ömrü", "Bluetooth 5.2", "Hızlı Şarj", "Su Sıçramalarına Dayanıklı"],
+        "specifications": {
+          "brand": "Samsung",
+          "model": "Galaxy Buds Pro",
+          "warranty": "1 Yıl"
+        },
+        "stock": 89
+      }
+    },
+    {
+      "id": 4,
+      "name": "Smart Monitor M8 M80D UHD",
+      "price": 14999.99,
+      "image": "https://i.hizliresim.com/cvnp1l0.jpg",
+      "link": "https://www.samsung.com/tr/monitors/high-resolution/smart-monitor-m8-32-inch-smart-tv-apps-ls32dm801uuxuf/",
+      "category": "Bilgisayar",
+      "details": {
+        "description": "Doğrudan monitörünüzde internet içerikleri izlerken 4K ekranın tam potansiyelinden yararlanın. NQM AI İşlemciden güç alan Yapay Zeka ile Görüntü Ölçekleme, düşük çözünürlükteki içeriği neredeyse 4K çözünürlüğe yükselterek eğlencenizi yepyeni bir netlik anlayışıyla dönüştürür.",
+        "features": ["4K UHD", "NQM AI İşlemcisi", "Görüntü Ölçekleme", "4K Çözünürlük", "Yapay Zeka"],
+        "specifications": {
+          "brand": "Samsung",
+          "model": "M80D",
+          "warranty": "2 Yıl"
+        },
+        "stock": 5
+      }
+    },
+    {
+      "id": 5,
+      "name": "Galaxy Watch6",
+      "price": 10999.99,
+      "image": "https://i.hizliresim.com/qfh0j4l.jpg",
+      "link": "https://www.samsung.com/tr/watches/galaxy-watch/galaxy-watch7-44mm-green-bluetooth-sm-l310nzgatur/buy/?modelCode=SM-L310NZGATUR",
+      "category": "Giyilebilir Teknoloji",
+      "details": {
+        "description": "Yeni 3 nm işlemciyle gün boyunca gücünüz hiç tükenmez. Çift Frekanslı GPS ile daima doğru yolda olun. Gelişmiş BioActive Sensör ile kalp atış hızınızı, egzersizlerinizi ve uykunuzu takip edin. Galaxy AI, sağlık durumunuzu izlemeniz için Enerji Skoru ile birlikte sağlık verileri sağlar.",
+        "features": ["3 nm İşlemci", "Çift Frekanslı GPS", "BioActive Sensör", "Galaxy AI", "Enerji Skoru"],
+        "specifications": {
+          "brand": "Samsung",
+          "model": "Galaxy Watch6",
+          "warranty": "2 Yıl"
+        },
+        "stock": 32
+      }
+    },
+    {
+      "id": 6,
+      "name": "Galaxy Tab 10 Ultra",
+      "price": 8999.99,
+      "image": "https://i.hizliresim.com/hjkbx2q.jpg",
+      "link": "https://www.samsung.com/tr/tablets/galaxy-tab-s10/buy/?modelCode=SM-X920NZAPTUR",
+      "category": "Elektronik",
+      "details": {
+        "description": "4K video çekebilen ve 30 dakikaya kadar havada kalabilen profesyonel drone. Otomatik takip özelliği ve stabil görüntü kalitesi ile mükemmel hava çekimleri yapabilirsiniz.",
+        "features": ["4K 60FPS Kamera", "30 Dakika Uçuş Süresi", "Otomatik Takip", "3-Eksenli Gimbal", "10KM Menzil"],
+        "specifications": {
+          "brand": "Samsung",
+          "model": "Galaxy Tab 10 Ultra",
+          "warranty": "2 Yıl"
+        },
+        "stock": 8
+      }
+    },
+    {
+      "id": 7,
+      "name": "LS60D Music Frame Dolby Atmos Hoparlör",
+      "price": 1299.99,
+      "image": "https://i.hizliresim.com/h8t03y9.jpg",
+      "link": "https://www.samsung.com/tr/audio-devices/music-frame/ls60d-black-hw-ls60d-tk/",
+      "category": "Ses Sistemleri",
+      "details": {
+        "description": "Resim çerçevesi şeklinde tasarlanmış bu hoparlör, evinizin dekoruna muhteşem uyum sağlar. Hoparlörü tarzınıza uygun bir Sanat Tablosuyla eşleştirin ve tasarımı bir Renkli Çerçeve ile tamamlayın.",
+        "features": ["ATMOS Music, ATMOS, Dolby 5.1ch, Dolby Digital Plus", "IPX7 Su Geçirmezlik", "Çift Hoparlör", "Dahili Mikrofon"],
+        "specifications": {
+          "brand": "Samsung",
+          "model": "LS60D Music Frame Dolby Atmos Hoparlör",
+          "warranty": "2 Yıl"
+        },
+        "stock": 24
+      }
+    }
+  ]
+} 
