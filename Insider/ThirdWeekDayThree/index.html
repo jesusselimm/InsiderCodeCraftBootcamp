@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">Jotforum</div>
+            <div class="hero-content">
+                <h2>Capturing Moments,<br>Creating Careers</h2>
+            </div>
+            <div class="slider-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot active"></span>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="form-container">
+                <h1>Apply Now</h1>
+                <p class="subtitle">Already have an application? <a href="#">Check status</a></p>
+                
+                <div id="application-form">
+                    <form id="jobForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="firstName" name="firstName" placeholder="First name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" name="lastName" placeholder="Last name">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="phone" name="phone" placeholder="Phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="position" name="position">
+                                <option value="">Position Applied For</option>
+                                <option value="developer">Software Developer</option>
+                                <option value="designer">UI/UX Designer</option>
+                                <option value="manager">Project Manager</option>
+                                <option value="marketing">Marketing Specialist</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="birthdate" name="birthdate" placeholder="Date of Birth">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="number" id="experience" name="experience" min="0" max="50" placeholder="Experience (Years)">
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#">Terms & Conditions</a>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" id="submitBtn" class="btn-primary">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div id="successMessage" class="success-message" style="display: none;">
+                    Your application has been successfully submitted! We will contact you soon.
+                </div>
+                
+                <div class="divider">
+                    <span>Or register with</span>
+                </div>
+                
+                <div class="social-logins">
+                    <button class="social-btn google-btn">
+                        Google
+                    </button>
+                    <button class="social-btn apple-btn">
+                        Apple
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery and other libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Panel */
+.left-panel {
+    width: 40%;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: white;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://images.unsplash.com/photo-1508739773434-c26b3d09e071');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.left-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(110, 69, 226, 0.8), rgba(136, 211, 206, 0.8));
+}
+
+.logo, .back-link, .hero-content, .slider-dots {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    margin-top: 10px;
+}
+
+.back-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.back-link a:hover {
+    opacity: 1;
+}
+
+.hero-content {
+    margin-top: auto;
+    margin-bottom: 80px;
+}
+
+.hero-content h2 {
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.slider-dots {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dot.active {
+    background-color: white;
+    width: 20px;
+    border-radius: 10px;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 60%;
+    background-color: #1e1e2f;
+    color: white;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.subtitle {
+    color: #a0a0a0;
+    margin-bottom: 40px;
+}
+
+.subtitle a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #a0a0a0;
+}
+
+input:focus, select:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+}
+
+select option {
+    background-color: #1e1e2f;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: auto;
+}
+
+.checkmark {
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-group input[type="checkbox"]:checked ~ .checkmark:after {
+    content: '✓';
+    color: white;
+}
+
+.checkbox-group a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+    background-color: #6e45e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #5a36c9;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    color: #a0a0a0;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.divider span {
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.social-logins {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.success-message {
+    background-color: rgba(110, 69, 226, 0.2);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    border-left: 4px solid #6e45e2;
+}
+
+/* Error styling */
+.error {
+    color: #ff6b6b;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+}
+
+input.error, select.error {
+    border: 1px solid #ff6b6b;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .left-panel {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .right-panel {
+        width: 100%;
+    }
+    
+    .hero-content {
+        margin-bottom: 40px;
+    }
+    
+    .hero-content h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .social-logins {
+        flex-direction: column;
+    }
+} 
